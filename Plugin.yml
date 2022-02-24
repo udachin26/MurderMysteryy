@@ -1,5 +1,11 @@
-name: MurderMystery
+name: MurderMysteryy
 version: 1.0
 author: ItsToxicGG
 main: murdermystery\toxicgg\mm
 api: [4.0.0]
+
+commands:
+  murdermystery:
+    description: Murder Mystery Command
+    usage: "/murdermystery"
+    permission: murdermystery.command
