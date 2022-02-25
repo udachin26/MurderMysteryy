@@ -10,16 +10,16 @@ use pocketmine\entity\EntityFactory;
 
 class mm extends PluginBase{
   
-  public function onLoad{
+  public function onLoad(): void{
     $this->getLogger->info("Loading MurderMystery...");
     $this->getLogger->info("...");
   }
   
-  public function onEnable{
+  public function onEnable(): void{
     $this->getLogger->info("Enabled MurderMystery");
     $this->getLogger->info("By ItsToxicGG");
   }
   
-  public function onDisable{
+  public function onDisable(): void{
     $this->getLogger->info("Disabling MurderMystery !!!");
   }
