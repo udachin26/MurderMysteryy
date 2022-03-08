@@ -8,6 +8,9 @@ use pocketmine\player\Player;
 use pocketmine\entity\Entity;
 use pocketmine\entity\EntityFactory;
 
+use pocketmine\block\Block;
+use pocketmine\block\BlockFactory;
+
 class mm extends PluginBase{
   
   public function onLoad(): void{
