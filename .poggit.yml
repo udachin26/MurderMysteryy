@@ -2,5 +2,11 @@
 build-by-default: true
 branches:
 - main
-projects: []
+projects:
+  MurderMysteryy:
+    path: ""
+    libs:
+      - src: Ifera/ScoreFactory/ScoreFactory
+        version: ^3.1.0
+
 ...
