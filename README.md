@@ -7,5 +7,4 @@ by Opening Pull Requests
 # Not Implemented
 - Arena
 - Full Commands
-- scoreboard
 - and much more
