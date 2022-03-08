@@ -11,7 +11,7 @@ use pocketmine\entity\EntityFactory;
 use pocketmine\block\Block;
 use pocketmine\block\BlockFactory;
 
-class mm extends PluginBase{
+class Murder extends PluginBase{
   
   public function onLoad(): void{
     $this->getLogger->info("Loading MurderMystery...");
