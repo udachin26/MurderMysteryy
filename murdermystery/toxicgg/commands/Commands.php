@@ -17,7 +17,7 @@ class Commands extends CommandSender{
             return true;
         case "info":
            $sender->sendMessage("§eMurderMystery Plugin by ItsToxicGG");
-           $sender->sendMessage("§cFound an problem? Report and issue or contact me on discord (ItsToxicGG#7420)");
+           $sender->sendMessage("§cFound an problem? Report a issue on github or contact me on discord (ItsToxicGG#7420)");
         
            return true;
         default:
