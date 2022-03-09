@@ -13,6 +13,10 @@ class Commands extends CommandSender{
             $sender->sendMessage("§c-======= MurderMystery Commands =======-");
             $sender->sendMessage("§c/murdermystery help");
             $sender->sendMessage("§c/murdermystery info");
+            $sender->sendMessage("§c/murdermystery setspawns");
+            $sender->sendMessage("§c/murdermystery setlobby");
+            $sender->sendMessage("§c/murdermystery create");
+            $sender->sendMessage("§c/murdermystery random");
 
             return true;
         case "info":
