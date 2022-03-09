@@ -11,7 +11,26 @@ use pocketmine\entity\EntityFactory;
 use pocketmine\block\Block;
 use pocketmine\block\BlockFactory;
 
+use murdermystery\toxicgg\utils\Utils;
+// use murdermystery
+
 class Murder extends PluginBase{
+  
+      /** @var MurderMystery */
+    private static MurderMystery $instance;
+
+    /** @var Game[] */
+    private array $game = [];
+
+    /** @return TheBridge */
+    public static function getInstance(): MurderMystery{
+        return self::$instance;
+    }
+
+    public function onLoad(): void
+    {
+        self::$instance = $this;
+    }
   
   public function onLoad(): void{
     $this->getLogger->info("Loading MurderMystery...");
