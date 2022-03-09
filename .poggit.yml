@@ -5,7 +5,7 @@ branches:
 projects:
   MurderMysteryy:
     path: ""
-        libs:
+    libs:
       - src: Ifera/ScoreFactory/ScoreFactory
         version: ^3.1.0
         
