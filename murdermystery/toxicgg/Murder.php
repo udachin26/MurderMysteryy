@@ -12,7 +12,9 @@ use pocketmine\block\Block;
 use pocketmine\block\BlockFactory;
 
 use murdermystery\toxicgg\utils\Utils;
-// use murdermystery
+use murdermystery\utils\SEntity;
+use murdermystery\arena\Arena;
+use murdermystery\commands\Commands;
 
 class Murder extends PluginBase{
   
@@ -40,6 +42,7 @@ class Murder extends PluginBase{
   public function onEnable(): void{
     $this->getLogger->info("Enabled MurderMystery");
     $this->getLogger->info("By ItsToxicGG");
+    $this->getServer()->getCommandMap()->register("murdermystery", new Commands($this, "murdermystery", "Murder Mystery Command", ["mm"]));
   }
   
   public function onDisable(): void{
