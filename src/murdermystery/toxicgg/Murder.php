@@ -22,18 +22,12 @@ class Murder extends PluginBase{
     private static MurderMystery $instance;
 
     /** @var Game[] */
-    private array $game = [];
-
-    /** @return TheBridge */
-    public static function getInstance(): MurderMystery{
-        return self::$instance;
-    }
+    private array $arena = [];
 
     public function onLoad(): void
     {
         $this->getLogger->info("Loading MurderMystery...");
         $this->getLogger->info("...");
-        self::$instance = $this;
     }
   
     public function onEnable(): void{
