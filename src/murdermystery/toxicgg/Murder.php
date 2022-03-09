@@ -31,22 +31,19 @@ class Murder extends PluginBase{
 
     public function onLoad(): void
     {
+        $this->getLogger->info("Loading MurderMystery...");
+        $this->getLogger->info("...");
         self::$instance = $this;
     }
   
-  public function onLoad(): void{
-    $this->getLogger->info("Loading MurderMystery...");
-    $this->getLogger->info("...");
-  }
+    public function onEnable(): void{
+        $this->getLogger->info("Enabled MurderMystery");
+        $this->getLogger->info("By ItsToxicGG");
+        $this->getServer()->getCommandMap()->register("murdermystery", new Commands($this, "murdermystery", "Murder Mystery Command", ["mm"]));
+    }
   
-  public function onEnable(): void{
-    $this->getLogger->info("Enabled MurderMystery");
-    $this->getLogger->info("By ItsToxicGG");
-    $this->getServer()->getCommandMap()->register("murdermystery", new Commands($this, "murdermystery", "Murder Mystery Command", ["mm"]));
-  }
-  
-  public function onDisable(): void{
-    $this->getLogger->info("Disabling MurderMystery !!!");
+    public function onDisable(): void{
+        $this->getLogger->info("Disabling MurderMystery !!!");
     
-  }
+    }
 }
