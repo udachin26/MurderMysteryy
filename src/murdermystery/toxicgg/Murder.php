@@ -47,4 +47,6 @@ class Murder extends PluginBase{
   
   public function onDisable(): void{
     $this->getLogger->info("Disabling MurderMystery !!!");
+    
   }
+}
