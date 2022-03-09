@@ -3,12 +3,12 @@
 namespace murdermystery\toxicgg\Task;
 
 use pocketmine\scheduler\Task;
-use murdermystery\toxicgg\mm;
+use murdermystery\toxicgg\Murder;
             
-class Task extends Task{
+class GameTask extends Task{
 
-    public function __construct(mm $main, string $playername){
-       $this->mm = $main;
+    public function __construct(Murder $main, string $playername){
+       $this->Murder = $main;
     }
 }
 
