@@ -11,6 +11,7 @@ use pocketmine\entity\EntityFactory;
 use pocketmine\block\Block;
 use pocketmine\block\BlockFactory;
 
+use CortexPE\Commando\PacketHooker;
 use murdermystery\toxicgg\utils\Utils;
 use murdermystery\utils\SEntity;
 use murdermystery\arena\Arena;
@@ -22,7 +23,7 @@ class Murder extends PluginBase{
     private static MurderMystery $instance;
 
     /** @var Game[] */
-    private array $arena = [];
+    private array $game = [];
   
     /** @return Murder Mystery */
     public static function getInstance(): MurderMystery{
