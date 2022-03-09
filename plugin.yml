@@ -1,7 +1,7 @@
 name: MurderMysteryy
 version: 1.0
 author: ItsToxicGG
-main: murdermystery\
+main: murdermystery\toxicgg\Murder
 api: 4.0.0
 
 commands:
