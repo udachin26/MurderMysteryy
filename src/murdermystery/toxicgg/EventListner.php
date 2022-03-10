@@ -1,3 +1,4 @@
+Hi
 <?php
 
 namespace murdermystery\toxicgg;
@@ -73,3 +74,4 @@ class EventListener implements Listener{
             $event->cancel();
         }
     }
+}
